@@ -21,6 +21,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <h1>Mi lista Pokemon</h1>
        <PokeList
         pokemonList={this.state.pokemonList}
        />
