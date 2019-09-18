@@ -4,6 +4,7 @@ function getAndFormatData(){
       .then(response => response.json())
       .then(data => data.map(pokemon => {
         return {
+          id: pokemon.id,
           image: pokemon.url,
           name: pokemon.name,
           types: pokemon.types

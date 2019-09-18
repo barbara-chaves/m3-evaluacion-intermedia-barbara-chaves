@@ -1,22 +1,12 @@
-import React from 'react';
-import Pokemon from './Pokemon';
-import '../stylesheets/poke-list.css'
+import React from "react";
+import "../stylesheets/poke-list.css";
 
-const PokeList = (props) => {
-  return(
-    <ul className='poke-list'>
-      {props.pokemonList.map((pokemon, index) => {
-        return (
-          <Pokemon
-            key={index}
-            image={pokemon.image}
-            name={pokemon.name}
-            types={pokemon.types}
-          />
-        )
-      })}
+const PokeList = props => {
+  return (
+    <ul className="poke-list">
+      {props.children}
     </ul>
-  )
-}
+  );
+};
 
-export default PokeList
+export default PokeList;
